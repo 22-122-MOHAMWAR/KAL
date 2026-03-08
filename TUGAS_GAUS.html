@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Notebooks with MyST Markdown &#8212; CATATANKU</title>
+    <title>Operasi Baris Elementer (OBE) – Eliminasi Gauss &#8212; CATATANKU</title>
   
   
   
@@ -57,7 +57,7 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'TUGAS_GAUS';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -252,7 +252,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTUGAS_GAUS.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -282,7 +282,7 @@
       
       
       
-      <li><a href="_sources/markdown-notebooks.md" target="_blank"
+      <li><a href="_sources/TUGAS_GAUS.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -366,7 +366,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Notebooks with MyST Markdown</h1>
+    <h1>Operasi Baris Elementer (OBE) – Eliminasi Gauss</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -376,9 +376,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-5-variabel">Sistem Persamaan Linear 5 Variabel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-sistem-persamaan-linear">1. Pengertian Sistem Persamaan Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss">2. Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-augmented">3. Bentuk Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer-obe">4. Operasi Baris Elementer (OBE)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-eliminasi-gauss">5. Langkah Eliminasi Gauss</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-awal">Matriks Awal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghilangkan-elemen-di-bawah-pivot-pertama">Menghilangkan elemen di bawah pivot pertama</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-segitiga-atas">6. Bentuk Segitiga Atas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#substitusi-balik">7. Substitusi Balik</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">8. Hasil Akhir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sage-cell">9. Contoh SAGE CELL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">10. Kesimpulan</a></li>
 </ul>
             </nav>
         </div>
@@ -390,50 +402,151 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Link to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Link to this heading">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="operasi-baris-elementer-obe-eliminasi-gauss">
+<h1>Operasi Baris Elementer (OBE) – Eliminasi Gauss<a class="headerlink" href="#operasi-baris-elementer-obe-eliminasi-gauss" title="Link to this heading">#</a></h1>
+<section id="sistem-persamaan-linear-5-variabel">
+<h2>Sistem Persamaan Linear 5 Variabel<a class="headerlink" href="#sistem-persamaan-linear-5-variabel" title="Link to this heading">#</a></h2>
 </section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
+<hr class="docutils" />
+<section id="pengertian-sistem-persamaan-linear">
+<h2>1. Pengertian Sistem Persamaan Linear<a class="headerlink" href="#pengertian-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<p>Sistem Persamaan Linear (SPL) adalah sekumpulan persamaan yang memiliki
+beberapa variabel dan harus diselesaikan secara bersamaan.</p>
+<p>Contoh sistem persamaan linear dengan <strong>5 variabel</strong>:</p>
+<p>x1 + 2x2 + x3 + x4 + x5 = 7<br />
+2x1 + x2 + 3x3 + x4 + 2x5 = 10<br />
+3x1 + 2x2 + 2x3 + 2x4 + x5 = 13<br />
+x1 + x2 + x3 + 2x4 + 3x5 = 11<br />
+2x1 + 3x2 + x3 + x4 + x5 = 12</p>
+<p>Variabel yang dicari:</p>
+<ul class="simple">
+<li><p>x1</p></li>
+<li><p>x2</p></li>
+<li><p>x3</p></li>
+<li><p>x4</p></li>
+<li><p>x5</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="metode-eliminasi-gauss">
+<h2>2. Metode Eliminasi Gauss<a class="headerlink" href="#metode-eliminasi-gauss" title="Link to this heading">#</a></h2>
+<p>Eliminasi Gauss adalah metode untuk menyelesaikan SPL dengan mengubah
+matriks menjadi <strong>bentuk segitiga atas</strong> menggunakan <strong>Operasi Baris
+Elementer (OBE)</strong>.</p>
+<p>Langkah umum:</p>
 <ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
+<li><p>Mengubah persamaan ke bentuk <strong>matriks augmented</strong></p></li>
+<li><p>Melakukan <strong>operasi baris elementer</strong></p></li>
+<li><p>Membuat elemen di bawah diagonal utama menjadi <strong>0</strong></p></li>
+<li><p>Menyelesaikan menggunakan <strong>substitusi balik</strong></p></li>
 </ol>
-<p>That’s all that is needed to get started!</p>
 </section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Link to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
-</pre></div>
-</div>
+<hr class="docutils" />
+<section id="bentuk-matriks-augmented">
+<h2>3. Bentuk Matriks Augmented<a class="headerlink" href="#bentuk-matriks-augmented" title="Link to this heading">#</a></h2>
+<p>1   2   1   1   1   7</p>
+<hr class="docutils" />
+<p>2   1   3   1   2   10
+3   2   2   2   1   13
+1   1   1   2   3   11
+2   3   1   1   1   12</p>
+</section>
+<hr class="docutils" />
+<section id="operasi-baris-elementer-obe">
+<h2>4. Operasi Baris Elementer (OBE)<a class="headerlink" href="#operasi-baris-elementer-obe" title="Link to this heading">#</a></h2>
+<p>Terdapat <strong>3 jenis operasi baris elementer</strong>:</p>
+<ol class="arabic simple">
+<li><p>Menukar dua baris<br />
+Ri ↔ Rj</p></li>
+<li><p>Mengalikan baris dengan konstanta<br />
+kRi</p></li>
+<li><p>Menjumlahkan baris dengan kelipatan baris lain<br />
+Ri - kRj</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="langkah-eliminasi-gauss">
+<h2>5. Langkah Eliminasi Gauss<a class="headerlink" href="#langkah-eliminasi-gauss" title="Link to this heading">#</a></h2>
+<section id="matriks-awal">
+<h3>Matriks Awal<a class="headerlink" href="#matriks-awal" title="Link to this heading">#</a></h3>
+<p>1   2   1   1   1   7</p>
+<hr class="docutils" />
+<p>2   1   3   1   2   10
+3   2   2   2   1   13
+1   1   1   2   3   11
+2   3   1   1   1   12</p>
+</section>
+<section id="menghilangkan-elemen-di-bawah-pivot-pertama">
+<h3>Menghilangkan elemen di bawah pivot pertama<a class="headerlink" href="#menghilangkan-elemen-di-bawah-pivot-pertama" title="Link to this heading">#</a></h3>
+<p>Operasi:</p>
+<p>R2 = R2 − 2R1<br />
+R3 = R3 − 3R1<br />
+R4 = R4 − R1<br />
+R5 = R5 − 2R1</p>
+<p>Hasil:</p>
+<p>1   2    1    1    1    7</p>
+<hr class="docutils" />
+<p>0   -3   1    -1   0    -4
+0   -4   -1   -1   -2   -8
+0   -1   0    1    2    4
+0   -1   -1   -1   -1   -2</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="bentuk-segitiga-atas">
+<h2>6. Bentuk Segitiga Atas<a class="headerlink" href="#bentuk-segitiga-atas" title="Link to this heading">#</a></h2>
+<p>1   2   1      1     1    7</p>
+<hr class="docutils" />
+<p>0   1   -1/3   1/3   0    4/3
+0   0   1      1     -1   2
+0   0   0      1     2    3
+0   0   0      0     1    1</p>
+</section>
+<hr class="docutils" />
+<section id="substitusi-balik">
+<h2>7. Substitusi Balik<a class="headerlink" href="#substitusi-balik" title="Link to this heading">#</a></h2>
+<p>Baris 5<br />
+x5 = 1</p>
+<p>Baris 4<br />
+x4 + 2x5 = 3<br />
+x4 = 1</p>
+<p>Baris 3<br />
+x3 + x4 − x5 = 2<br />
+x3 = 2</p>
+<p>Baris 2<br />
+x2 − 1/3 x3 + 1/3 x4 = 4/3<br />
+x2 = 1</p>
+<p>Baris 1<br />
+x1 + 2x2 + x3 + x4 + x5 = 7<br />
+x1 = 1</p>
+</section>
+<hr class="docutils" />
+<section id="hasil-akhir">
+<h2>8. Hasil Akhir<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h2>
+<p>x1 = 1<br />
+x2 = 1<br />
+x3 = 2<br />
+x4 = 1<br />
+x5 = 1</p>
+</section>
+<hr class="docutils" />
+<section id="contoh-sage-cell">
+<h2>9. Contoh SAGE CELL<a class="headerlink" href="#contoh-sage-cell" title="Link to this heading">#</a></h2>
+<p><img alt="GAMBAR" src="_images/SAGE.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="kesimpulan">
+<h2>10. Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<p>Metode <strong>Eliminasi Gauss</strong> digunakan untuk menyelesaikan sistem
+persamaan linear dengan langkah:</p>
+<ol class="arabic simple">
+<li><p>Mengubah persamaan menjadi matriks augmented</p></li>
+<li><p>Melakukan operasi baris elementer</p></li>
+<li><p>Mengubah matriks menjadi bentuk segitiga atas</p></li>
+<li><p>Menentukan nilai variabel dengan substitusi balik</p></li>
+</ol>
+<p>Metode ini efektif untuk menyelesaikan sistem persamaan linear dengan
+banyak variabel seperti <strong>5 persamaan dan 5 variabel</strong>.</p>
 </section>
 </section>
 
@@ -483,9 +596,21 @@ See the YAML at the top of this page for example.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-5-variabel">Sistem Persamaan Linear 5 Variabel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-sistem-persamaan-linear">1. Pengertian Sistem Persamaan Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss">2. Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-augmented">3. Bentuk Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer-obe">4. Operasi Baris Elementer (OBE)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-eliminasi-gauss">5. Langkah Eliminasi Gauss</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-awal">Matriks Awal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghilangkan-elemen-di-bawah-pivot-pertama">Menghilangkan elemen di bawah pivot pertama</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-segitiga-atas">6. Bentuk Segitiga Atas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#substitusi-balik">7. Substitusi Balik</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">8. Hasil Akhir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sage-cell">9. Contoh SAGE CELL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">10. Kesimpulan</a></li>
 </ul>
   </nav></div>
 
