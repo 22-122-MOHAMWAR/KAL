@@ -446,24 +446,18 @@ Elementer (OBE)</strong>.</p>
 <hr class="docutils" />
 <section id="bentuk-matriks-augmented">
 <h2>3. Bentuk Matriks Augmented<a class="headerlink" href="#bentuk-matriks-augmented" title="Link to this heading">#</a></h2>
-<p>1   2   1   1   1   7</p>
-<hr class="docutils" />
-<p>2   1   3   1   2   10
-3   2   2   2   1   13
-1   1   1   2   3   11
-2   3   1   1   1   12</p>
-<hr class="docutils" />
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{bmatrix}
-1 &amp; 2 &amp; 1 &amp; 1 &amp; 1 &amp; | &amp; 7 \\
-0 &amp; -3 &amp; 1 &amp; -1 &amp; 0 &amp; | &amp; -4 \\
-0 &amp; -4 &amp; -1 &amp; -1 &amp; -2 &amp; | &amp; -8 \\
-0 &amp; -1 &amp; 0 &amp; 1 &amp; 2 &amp; | &amp; 4 \\
-0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 &amp; | &amp; -2
+  1 &amp; 2 &amp; 1 &amp; 1 &amp; 1 | &amp; 7 \\
+  2 &amp; 1 &amp; 3 &amp; 1 &amp; 2 | &amp; 10 \\
+  3 &amp; 2 &amp; 2 &amp; 2 &amp; 1 | &amp; 13 \\
+  1 &amp; 1 &amp; 1 &amp; 2 &amp; 3 | &amp; 11 \\
+  2 &amp; 3 &amp; 1 &amp; 1 &amp; 1 | &amp; 12
 \end{bmatrix}
 \end{split}\]</div>
 </section>
+<hr class="docutils" />
 <section id="operasi-baris-elementer-obe">
 <h2>4. Operasi Baris Elementer (OBE)<a class="headerlink" href="#operasi-baris-elementer-obe" title="Link to this heading">#</a></h2>
 <p>Terdapat <strong>3 jenis operasi baris elementer</strong>:</p>
@@ -481,12 +475,16 @@ Ri - kRj</p></li>
 <h2>5. Langkah Eliminasi Gauss<a class="headerlink" href="#langkah-eliminasi-gauss" title="Link to this heading">#</a></h2>
 <section id="matriks-awal">
 <h3>Matriks Awal<a class="headerlink" href="#matriks-awal" title="Link to this heading">#</a></h3>
-<p>1   2   1   1   1   7</p>
-<hr class="docutils" />
-<p>2   1   3   1   2   10
-3   2   2   2   1   13
-1   1   1   2   3   11
-2   3   1   1   1   12</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+  1 &amp; 2 &amp; 1 &amp; 1 &amp; 1 | &amp; 7 \\
+  2 &amp; 1 &amp; 3 &amp; 1 &amp; 2 | &amp; 10 \\
+  3 &amp; 2 &amp; 2 &amp; 2 &amp; 1 | &amp; 13 \\
+  1 &amp; 1 &amp; 1 &amp; 2 &amp; 3 | &amp; 11 \\
+  2 &amp; 3 &amp; 1 &amp; 1 &amp; 1 | &amp; 12
+\end{bmatrix}
+\end{split}\]</div>
 </section>
 <section id="menghilangkan-elemen-di-bawah-pivot-pertama">
 <h3>Menghilangkan elemen di bawah pivot pertama<a class="headerlink" href="#menghilangkan-elemen-di-bawah-pivot-pertama" title="Link to this heading">#</a></h3>
@@ -496,23 +494,31 @@ R3 = R3 − 3R1<br />
 R4 = R4 − R1<br />
 R5 = R5 − 2R1</p>
 <p>Hasil:</p>
-<p>1   2    1    1    1    7</p>
-<hr class="docutils" />
-<p>0   -3   1    -1   0    -4
-0   -4   -1   -1   -2   -8
-0   -1   0    1    2    4
-0   -1   -1   -1   -1   -2</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+  1 &amp; 2 &amp; 1 &amp; 1 &amp; 1 | &amp; 7 \\
+  0 &amp; -3 &amp; 1 &amp; -1 &amp; 0 | &amp; -4 \\
+  0 &amp; -4 &amp; -1 &amp; -1 &amp; -2 | &amp; -8 \\
+  0 &amp; -1 &amp; 0 &amp; 1 &amp; 2 | &amp; 4 \\
+  0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 | &amp; -2
+\end{bmatrix}
+\end{split}\]</div>
 </section>
 </section>
 <hr class="docutils" />
 <section id="bentuk-segitiga-atas">
 <h2>6. Bentuk Segitiga Atas<a class="headerlink" href="#bentuk-segitiga-atas" title="Link to this heading">#</a></h2>
-<p>1   2   1      1     1    7</p>
-<hr class="docutils" />
-<p>0   1   -1/3   1/3   0    4/3
-0   0   1      1     -1   2
-0   0   0      1     2    3
-0   0   0      0     1    1</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+  1 &amp; 2 &amp; 1 &amp; 1 &amp; 1 | &amp; 7 \\
+  0 &amp; 1 &amp; -1/3 &amp; 1/3 &amp; 0 | &amp; 4/3 \\
+  0 &amp; 0 &amp; 1 &amp; 1 &amp; -1 | &amp; 2 \\
+  0 &amp; 0 &amp; 0 &amp; 1 &amp; 2 | &amp; 3 \\
+  0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 | &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
 </section>
 <hr class="docutils" />
 <section id="substitusi-balik">
