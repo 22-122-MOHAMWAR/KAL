@@ -53,6 +53,16 @@ Langkah umum:
 
 ------------------------------------------------------------------------
 
+$$
+\begin{bmatrix}
+1 & 2 & 1 & 1 & 1 & | & 7 \\
+0 & -3 & 1 & -1 & 0 & | & -4 \\
+0 & -4 & -1 & -1 & -2 & | & -8 \\
+0 & -1 & 0 & 1 & 2 & | & 4 \\
+0 & -1 & -1 & -1 & -1 & | & -2
+\end{bmatrix}
+$$
+
 ## 4. Operasi Baris Elementer (OBE)
 
 Terdapat **3 jenis operasi baris elementer**:
